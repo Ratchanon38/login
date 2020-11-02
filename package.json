@@ -11,6 +11,9 @@
         "generate": "nuxt generate",
         "heroku-postbuild": "npm run bulid"
     },
+    "engines": {
+        "node": "6.10.2"
+    },
     "dependencies": {
         "@nuxtjs/axios": "^5.3.6",
         "@nuxtjs/dotenv": "^1.4.0",
