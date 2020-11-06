@@ -144,7 +144,7 @@ export default {
         if (liff.isLoggedIn()) {
           liff.getProfile().then((profile) => {
             this.$store.dispatch("setLine", profile);
-            /* this.isDone(); */
+            this.isDone();
           });
         } else {
           liff.login();
