@@ -219,8 +219,8 @@ export default {
       return "please input ThaiNationalid number"
     },
     onlyNumber(event, max){  
-      if(event.target.value.length == 0){
-        if(event.key != 0){
+      if(event.target.value.length == 1){
+        if(event.key != 1){
           return event.preventDefault()
         }
       }else{
