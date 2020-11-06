@@ -144,7 +144,7 @@ export default {
         if (liff.isLoggedIn()) {
           liff.getProfile().then((profile) => {
             this.$store.dispatch("setLine", profile);
-            this.isDone();
+            /* this.isDone(); */
           });
         } else {
           liff.login();
@@ -220,7 +220,7 @@ export default {
     },
     onlyNumber(event, max){  
       if(event.target.value.length == 1){
-        if(event.key != 1){
+        if(event.key != 0){
           return event.preventDefault()
         }
       }else{
